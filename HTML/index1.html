@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms</title>
 </head>
 <body>
     <h1 style="text-align: center;">Формы</h1>
     <form>
-        <p>
+        <div>
             <label for="name"> Имя пользователя</label><br>
             <input 
             type="text" 
             placeholder="Введите имя"
              id="name">
-        </p>
-        <p>
+        </div>
+        <div>
             <label for="email">Электронная почта</label> <br>
-            <input
-            type="email"
-            placeholder="Введите электронную почту"
+            <input placeholder="Введите электронную почту"
             id="email">
-        </p>
-        <p>
-        <label for="comment">Текст комментария</label><br>
-        <textarea id="comment" placeholder="Введите коментарий"cols="30" rows="10"></textarea>  
-        </p>
-        <p>
+        </div>
+        <div>
+            <label for="comment">Текст комментария</label><br>
+            <textarea id="comment" placeholder="Введите коментарий" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
             <label>Выпадающий список с вариантами:</label><br>
             <select>
                 <option>Вопрос</option>
                 <option> Отзыв</option>
                 <option> Предложения</option>
             </select>
-        </p>
-
-        <input type="submit">
-        <p>
-            <label>Я согласен на обработку персональных данных<br> <input type="radio" name="primer">Да <br><input type="radio" name="primer">Нет</label>
-        </p>
-        <p>
+        </div>
+        <div><input type="submit"></div>
+        <div>
+            <label>Я согласен на обработку персональных данных<br> 
+                <input type="radio" name="primer">Да <br>
+                <input type="radio" name="primer">Нет</label>
+        </div>
+        <div>
         <label> Каким образом отправить ответ<br>
         <input type="checkbox" value="1" checked> На почту<br>
         <input type="checkbox" value="2"> Перезвонить по телефону<br>
         </label>
-        </p>
+        </div>
     </form>
     
 </body>
